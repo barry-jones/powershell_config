@@ -4,7 +4,7 @@ Import-Module posh-git
 Import-Module PSReadLine 
 Import-Module -Name Terminal-Icons
 
-oh-my-posh --init --shell pwsh --config $config | Invoke-Expression
+oh-my-posh init pwsh --config "$config" | invoke-expression
 
 Set-PSReadLineOption -PredictionSource History 
 Set-PSReadLineOption -PredictionViewStyle ListView 
